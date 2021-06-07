@@ -1,8 +1,12 @@
 body {
   font-size: 16px;
 }
-.bg-color-grad{
-  background-image: linear-gradient(to top left, hsl(353, 100%, 62%),hsl(13, 100%, 72%));
+.bg-color-grad {
+  background-image: linear-gradient(
+    to top left,
+    hsl(353, 100%, 62%),
+    hsl(13, 100%, 72%)
+  );
   color: hsl(0, 0%, 100%);
   border-bottom-left-radius: 60pt 40pt;
 }
@@ -16,30 +20,13 @@ body {
   padding: 0 2em;
   margin-left: 5px;
 }
-.nav-btn:hover{
+.nav-btn:hover {
   background-color: hsl(355, 100%, 74%);
   color: hsl(0, 0%, 100%);
 }
-.hover-state{
+.hover-state {
   color: hsl(0, 0%, 100%);
 }
-/* .wrapper ul{
-  list-style: none;
-  margin-top: 2%;
-  display: flex;
-}
-.wrapper ul li{
-  width: 170px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-}
-.wrapper ul ul{
-  display: none;
-}
-.wrapper ul li:hover > ul{
-  display: block; */
-/* } */
 /* Body */
 .intro {
   text-align: center;
@@ -58,11 +45,12 @@ body {
 
 .start-btn {
   list-style: none;
-  padding: 1em;
+  padding: 1.3em;
   align-items: center;
   display: flex;
   align-content: center;
   padding-left: 32em;
+  cursor: pointer;
 }
 .plain-btn {
   background-color: hsl(356, 100%, 66%);
@@ -71,10 +59,11 @@ body {
   border-radius: 2em;
   padding: 0 2em;
   margin-left: 5px;
+  cursor: pointer;
 }
-.plain-btn:hover{
-    background-color: hsl(0, 0%, 100%);
-    color: hsl(356, 100%, 66%);
+.plain-btn:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(356, 100%, 66%);
 }
 .design-future {
   color: hsl(208, 49%, 24%);
@@ -83,14 +72,19 @@ body {
   height: 120vh;
   z-index: 2;
 }
-.intro-text{
+.design-future-small {
   color: hsl(208, 49%, 24%);
- 
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+.intro-text {
+  color: hsl(208, 49%, 24%);
 }
 .design {
   padding: 5em;
 }
-.design-small{
+.design-small {
   padding: 2em;
 }
 
@@ -98,17 +92,25 @@ body {
   padding-bottom: 5rem;
   padding-left: 7rem;
 }
+.design-future-small .design-body-small {
+  padding-bottom: 5rem;
+  
+}
 
 .design-future .design-body h5 {
   padding: 0.5rem;
 }
-
+.design-future-small .design-body-small h5 {
+  padding: 0.5rem;
+}
 .design-future .design-body p {
   padding-bottom: 2.5rem;
 }
-
+.bottom-small{
+  padding-bottom: 15em;
+}
 .illustration-editor {
-    position: absolute;
+  position: absolute;
   background-image: url(./images/illustration-editor-desktop.svg);
   background-position: center;
   background-size: contain;
@@ -118,66 +120,79 @@ body {
   top: -1rem;
   right: -10em;
 }
-.illustration-editor-small{
-  background-image: url(./images/illustration-editor-desktop.svg);
+.illustration-editor-small {
+  background-image: url(./images/illustration-editor-mobile.svg);
   width: 400px;
-  text-align: center;
-  height: 600px;
+  padding-left: 20em;
+  height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid gold;
   margin: 2px;
 }
-.state{
-    background-image: linear-gradient(to top right, hsl(237, 17%, 21%),hsl(237, 23%, 32%));
-    padding: 6.6em;
-    margin-bottom: 4em;
-    border-bottom-left-radius: 60pt 40pt;
-    border-top-right-radius: 60pt 40pt;
-    overflow: hidden;
+
+.state {
+  background-image: linear-gradient(
+    to top right,
+    hsl(237, 17%, 21%),
+    hsl(237, 23%, 32%)
+  );
+  padding: 6.6em;
+  margin-bottom: 4em;
+  border-bottom-left-radius: 60pt 40pt;
+  border-top-right-radius: 60pt 40pt;
+  overflow: hidden;
 }
-.state-align{
-    position: relative;
-    left: 40em;
-    background-position: center;
+.state-align {
+  position: relative;
+  left: 40em;
+  background-position: center;
   background-size: contain;
 }
-.state-align .state-head h4{
-    padding-bottom: 2rem;
+.state-align .state-head h4 {
+  padding-bottom: 2rem;
 }
-.phones{
-    position: absolute;
-    background-image: url(./images/illustration-phones.svg);
-    background-repeat: no-repeat;
-    width: 700px;
-    height: 800px;
-    bottom: -78em;
-    right: 35em;
+.phones {
+  position: absolute;
+  background-image: url(./images/illustration-phones.svg);
+  background-repeat: no-repeat;
+  width: 700px;
+  height: 800px;
+  bottom: -78em;
+  right: 35em;
 }
 
-.free{
-    overflow: hidden;
-    padding: 8em;
+.free {
+  overflow: hidden;
+  padding: 8em;
 }
-.entire{
-    padding: 10em 0;
+.entire {
+  padding: 10em 0;
 }
-.laptops{
-    background-image: url(./images/illustration-laptop-desktop.svg);
-    background-repeat: no-repeat;
-    width: 900px;
-    height: 800px;
-    position: absolute;
-    bottom: -115em;
-    left: -270px;
-    
+.laptops {
+  background-image: url(./images/illustration-laptop-desktop.svg);
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 800px;
+  position: absolute;
+  bottom: -115em;
+  left: -270px;
 }
-.free .state-align{
-    color: hsl(208, 49%, 24%);;
+.laptops-small {
+  background-image: url(./images/illustration-laptop-desktop.svg);
+  width: 800px;
+  height: 900px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 2px;
 }
-.state-align h5{
-  padding-bottom: .5em;
+.free .state-align {
+  color: hsl(208, 49%, 24%);
+  border: 1px solid gold;
+}
+.state-align h5 {
+  padding-bottom: 0.5em;
 }
 
 /* Footer */
@@ -187,10 +202,44 @@ body {
   position: absolute;
   bottom: -145em;
 }
-.footer p{
-    color: hsl(240, 2%, 79%);
-    cursor: pointer;
+.footer p {
+  color: hsl(240, 2%, 79%);
+  cursor: pointer;
 }
-.footer p:hover{
-    text-decoration: underline;
+.footer p:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 1024px) {
+  .start-btn {
+    padding-left: 21em;
+  }
+  .illustration-editor {
+    right: -15em;
+  }
+  .phones {
+    right: 21em;
+  }
+  .state-align {
+    left: 28em;
+  }
+}
+@media screen and (max-width: 768px){
+  .start-btn{
+    padding-left: 13em;
+  }
+  .illustration-editor-small{
+    padding-left: 45em;
+  }
+  .phones{
+    right: 1em; 
+    bottom: -95em;
+  }
+  .state{
+    padding-top: 15em;
+  }
+  .state-align {
+    position: relative;
+    left: -2em;
+    top: 30em;
+  }
 }
