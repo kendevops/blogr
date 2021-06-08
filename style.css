@@ -1,25 +1,85 @@
-html{
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+/* General Style */
+html {
   font-size: 16px;
 }
-*{
+:root {
+  --light-red: hsl(356, 100%, 66%);
+  --very-light-red: hsl(355, 100%, 74%);
+  --very-dark-blue: hsl(208, 49%, 24%);
+  --text: hsl(0, 0%, 100%);
+  --footer-text: hsl(240, 2%, 79%);
+  --very-dark-grayish-blue: hsl(207, 13%, 34%);
+  --very-dark-black-blue: hsl(240, 10%, 16%);
+  --font-overpass: 'Overpass', sans-serif;
+  --font-ubuntu: 'Ubuntu', sans-serif;;
+}
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
-img{
+img {
   width: 100%;
 }
-nav{
-  background-color:hsl(356, 100%, 66%);
+button{
+  padding: 1rem;
+  border: none;
+  border-radius: 2rem;
+  margin: 0 .3rem;
+  font-family: var(--font-ubuntu);
+}
+/* Navigation */
+nav {
+  background-color: var(--light-red);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 2rem 1rem;
 }
-.menu{
+.menu {
   justify-self: end;
   align-self: center;
 }
-.logo{
+.logo {
   width: 5rem;
   align-self: center;
+}
+/* Intro */
+.intro {
+  text-align: center;
+  padding: 5rem 1rem;
+  padding-bottom: 8rem;
+  font-family: var(--font-overpass);
+  background-color: var(--light-red);
+  color: var(--text);
+  border-radius: 0 0 0 5rem;
+}
+.intro h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.intro p{
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.white-bg{
+  color: var(--light-red);
+  border: 1px solid var(--text);
+}
+.white-bg:hover{
+  background-color: var(--very-light-red);
+  color: var(--text);
+  border: 1px solid var(--very-light-red);
+}
+.redish-bg{
+  background-color: var(--light-red);
+  border: 1px solid var(--text);
+  color: var(--text);
+}
+.redish-bg:hover{
+  background-color: var(--text);
+  color: var(--light-red);
 }
