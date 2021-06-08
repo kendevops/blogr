@@ -24,11 +24,22 @@ img {
   width: 100%;
 }
 button {
-  padding: 1rem;
+  padding: 1rem 2rem;
   border: none;
   border-radius: 2rem;
   margin: 0 0.3rem;
   font-family: var(--font-ubuntu);
+}
+ul{
+  list-style: none;
+}
+.drop-down ul li{
+  display: flex;
+}
+.arrow-light{
+  margin-left: .3rem;
+  width: .6rem;
+  height: 1rem;
 }
 /* Navigation */
 nav {
@@ -37,13 +48,16 @@ nav {
   grid-template-columns: repeat(2, 1fr);
   padding: 2rem 1rem;
 }
-.menu {
+.hamburger-menu {
   justify-self: end;
   align-self: center;
 }
 .logo {
   width: 5rem;
   align-self: center;
+}
+.nav-menu{
+  display: none;
 }
 /* Intro */
 .intro {
@@ -102,6 +116,9 @@ nav {
   color: var(--very-dark-grayish-blue);
   line-height: 1.5;
 }
+.illustration-desktop{
+  display: none;
+}
 /* state */
 .state-section {
   text-align: center;
@@ -148,6 +165,9 @@ footer{
   justify-self: center;
   padding: 2rem 0;
 }
+.logo-footer-small{
+  display: none;
+}
 .footer-menu{
   color: var(--footer-text);
   justify-self: center;
@@ -160,4 +180,56 @@ footer{
 }
 .product h3{
   padding: 1rem 0;
+}
+@media screen and (min-width:768px) {
+ .hamburger-menu{
+   display: none;
+ }
+ nav{
+   grid-template-columns: max-content auto;
+ }
+ .nav-menu{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   color: var(--text);
+   padding-left: 2rem;
+ }
+ .drop-down{
+  align-self: center;
+}
+ .drop-down ul{
+   display: flex;
+ }
+ .drop-down ul li{
+   padding: 0 1rem;
+ }
+ .btn-reg{
+   justify-self: end;
+ }
+ .login{
+   background-color: transparent;
+   color: var(--text);
+ }
+ .illustration-mobile{
+   display: none;
+ }
+ footer{
+   padding: 1rem 2rem;
+   text-align: start;
+ }
+ .logo-footer{
+   display: none;
+ }
+ .logo-footer-small{
+   display: block;
+  justify-self: start;
+  width: 5rem;
+  margin: 0 3rem;
+ }
+ .footer-menu{
+  display: flex;
+ }
+ .product{
+   padding: 0 2rem;
+ }
 }
