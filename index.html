@@ -1,235 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-  <!-- Bootstrap -->
-  <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-      crossorigin="anonymous"
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | [Blogr]</title>
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
-
-  <title>Frontend Mentor | [Blogr]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-   <!-- Navigation -->
-   <div class="bg-color-grad">
-   <nav class="navbar navbar-expand-lg navbar-light" id="custom-navbar">
-    <div class="container">
-      <a href="#" class="navbar-brand custom-brand"
-        ><img src="./images/logo.svg" alt=""></a
-      >
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        
-        <ul class="navbar-nav mr-auto me-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Product
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Overview</a></li>
-              <li><a class="dropdown-item" href="#">Pricing</a></li>
-              <li><a class="dropdown-item" href="#">Marketplace</a></li>
-              <li><a class="dropdown-item" href="#">Features</a></li>
-              <li><a class="dropdown-item" href="#">Integrations</a></li>
-
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             Company
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">About</a></li>
-              <li><a class="dropdown-item" href="#">Team</a></li>
-              <li><a class="dropdown-item" href="#">Blog</a></li>
-              <li><a class="dropdown-item" href="#">Careers</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Contact
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown dd-hover">
-              <li><a class="dropdown-item" href="#">Newsletter</a></li>
-              <li><a class="dropdown-item" href="#">LinkedIn</a></li>
-            </ul>
-          </li>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo" />
       </div>
-      <div
-          class="collapse navbar-collapse d-m-flex justify-content-end"
-          id="navContent"
-        >
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item plain-btn"> <a href="#" class="nav-link  text-white">Login</a>
-            </li>
-            <li class="nav-item nav-btn"> 
-              <a href="#" class="nav-link hover-state" style="color: hsl(356, 100%, 66%);">Sign Up</a>
-            </li> 
-          </ul>
-        </div>
+      <div class="menu">
+        <img src="./images/icon-hamburger.svg" alt="icon-hamburger">
       </div>
-      </nav>
-      <!-- Main -->
-  <main>
-<div class="container-fluid">
-  <div class="row">
-    <div class="intro">
-      <!-- <div class="pattern"><img src="./images/bg-pattern-intro.svg" alt="">
-      </div>  -->
-  <h1>A modern publishing platform</h1>
-  <p>Grow your audience and build your online brand</p>
-  <ul class="start-btn">
-    <li class="nav-btn">Start for Free</li>
-    <li class="plain-btn"> Learn More</li>
-  </ul>
-  </div>
-</div>
-</div>
-</div>
-<div class="container d-lg-none design-future-small">
-  <h2 class="text-center design-small">Designed for the future</h2>
-  <div class="col-12 illustration-editor-small"></div>
-  <div class="col-12 text-center design-body-small">
-    <h5>Introducing an extensible editor</h5>
-
-    <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-    The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-    videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-    change the looks of a blog.</p>
-
-  <h5>Robust content management</h5>
-
-  <p class="bottom-small"> Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-   by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
-  </div>
-</div>
-  <div class="container-fluid d-lg-block d-none design-future">
-    <div class="design">
-      <h2 class="text-center">Designed for the future</h2>
-    </div>
-    <div class="col-lg-6 illustration-editor"></div>
-
-      <div class="col-lg-6 design-body">
-        <h5>Introducing an extensible editor</h5>
-
-        <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-        The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-        videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-        change the looks of a blog.</p>
-
-      <h5>Robust content management</h5>
-
-      <p> Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-       by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
-      </div>
-</div>
-<div class="container-fluid state d-lg-none">
-  <div class="row">
-    <div class="col-lg-4 phones"></div>
-      <div class="text-center state-align-small">
-    <div class=" text-white state-head col-12">
-    <h4>State of the Art Infrastructure</h4>
-    <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-      This ensures your site will load instantly, no matter where your readers are, keeping your site <br>competitive.</p>
-    </div>
-    </div>
-  </div>
-</div>  
-<div class="container-fluid state d-none d-lg-block">
-  <div class="row">
-    <div class="col-lg-4 phones"></div>
-      <div class="state-align">
-    <div class=" text-white state-head">
-    <h4>State of the Art Infrastructure</h4>
-    <p>With reliability and speed in mind, worldwide data centers provide the<br> backbone for ultra-fast connectivity. 
-      This ensures your site will load<br> instantly, no matter where your readers are, keeping your site <br>competitive.</p>
-    </div>
-    </div>
-  </div>
-</div>  
-<div class="container-fluid free d-lg-none">
-  <div class="row entireeee">
-    <div class="laptops-small"></div>
-    <div class="state-align text-center col-12">
-        <h5>Free, open, simple</h5>
-        <p>Blogr is a free and open source application backed by a large<br> community of helpful developers. It supports 
-          features such as code<br> syntax highlighting, RSS feeds, social media integration, third-party<br> commenting tools, 
-          and works seamlessly with Google Analytics. The<br> architecture is clean and is relatively easy to learn.</p>
-          <h5>Powerful tooling</h5>
-          <p> Batteries included. We built a simple and straightforward CLI tool that<br> makes customization and deployment a breeze, but
-            capable of<br> producing even the most complicated sites.</p>
-    </div>
-  </div>
-</div>
-  <div class="container-fluid free d-none d-lg-block">
-    <div class="row entireeee">
-      <div class="laptops"></div>
-      <div class="state-align">
-          <h5>Free, open, simple</h5>
-          <p>Blogr is a free and open source application backed by a large<br> community of helpful developers. It supports 
-            features such as code<br> syntax highlighting, RSS feeds, social media integration, third-party<br> commenting tools, 
-            and works seamlessly with Google Analytics. The<br> architecture is clean and is relatively easy to learn.</p>
-            <h5>Powerful tooling</h5>
-            <p> Batteries included. We built a simple and straightforward CLI tool that<br> makes customization and deployment a breeze, but
-              capable of<br> producing even the most complicated sites.</p>
-      </div>
-    </div>
-  </div>
-  <!-- <div class="container-fluid p-lg-5 footer">
-    <div class="row text-uppercase">
-      <div class="col-lg-3 text-center text-lg-start py-3 ">
-        <img src="./images/logo.svg" alt="logo">
-      </div>
-      <div class="col-lg-2 text-center text-white text-lg-start">
-        <h5 class="primary-color-grey-blue my-4">Product</h5>
-        <p>Overview</p>
-        <p>Pricing</p>
-        <p>Marketplace</p>
-        <p>Features</p>
-        <p>Integrations</p>
-      </div>
-      <div class="col-lg-2 text-center text-white text-lg-start">
-        <h5 class="primary-color-grey-blue my-4">About</h5>
-        <p>Team</p>
-        <p>Blog</p>
-        <p>Careers</p>
-      </div>
-      <div class="col-lg-2 text-center text-white text-lg-start">
-        <h5 class="primary-color-grey-blue my-4">Connect</h5>
-        <p>Contact</p>
-        <p>Newsletter</p>
-        <p>LinkedIn</p>
-      </div>
-    </div>
-    <div class="attribution" style="color: white;">
-      Coded by <a href="https://github.com/Ihuoma5" target="_blank">Ihuoma Ndukwe</a>.
-    </div>
-    </div> -->
-</main>
-  
-    <!-- Bootstrap JS -->
-    <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-    crossorigin="anonymous"
-  ></script>
-</body>
+    </nav>
+    <div class="attribution">Coded by <a href="#">Ihuoma Ndukwe</a>.</div>
+  </body>
 </html>
