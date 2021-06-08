@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
 /* General Style */
 html {
   font-size: 16px;
@@ -11,8 +11,8 @@ html {
   --footer-text: hsl(240, 2%, 79%);
   --very-dark-grayish-blue: hsl(207, 13%, 34%);
   --very-dark-black-blue: hsl(240, 10%, 16%);
-  --font-overpass: 'Overpass', sans-serif;
-  --font-ubuntu: 'Ubuntu', sans-serif;;
+  --font-overpass: "Overpass", sans-serif;
+  --font-ubuntu: "Ubuntu", sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -23,11 +23,11 @@ html {
 img {
   width: 100%;
 }
-button{
+button {
   padding: 1rem;
   border: none;
   border-radius: 2rem;
-  margin: 0 .3rem;
+  margin: 0 0.3rem;
   font-family: var(--font-ubuntu);
 }
 /* Navigation */
@@ -61,25 +61,103 @@ nav {
   line-height: 1.2;
   margin-bottom: 1rem;
 }
-.intro p{
+.intro p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-.white-bg{
+.white-bg {
   color: var(--light-red);
   border: 1px solid var(--text);
 }
-.white-bg:hover{
+.white-bg:hover {
   background-color: var(--very-light-red);
   color: var(--text);
   border: 1px solid var(--very-light-red);
 }
-.redish-bg{
+.redish-bg {
   background-color: var(--light-red);
   border: 1px solid var(--text);
   color: var(--text);
 }
-.redish-bg:hover{
+.redish-bg:hover {
   background-color: var(--text);
   color: var(--light-red);
+}
+/* Design */
+.design {
+  text-align: center;
+  padding: 0 1rem;
+}
+.design h2 {
+  padding: 5rem 0;
+  color: var(--very-dark-blue);
+  font-size: 1.8rem;
+}
+.design h4 {
+  padding: 2rem 0;
+  color: var(--very-dark-blue);
+  font-size: 1.8rem;
+}
+.design p {
+  color: var(--very-dark-grayish-blue);
+  line-height: 1.5;
+}
+/* state */
+.state-section {
+  text-align: center;
+}
+.phone {
+  height: 25rem;
+  margin-bottom: -12.5rem;
+}
+.state {
+  background-color: var(--very-dark-blue);
+  background-image: url(./images/bg-pattern-circles.svg);
+  background-size: contain;
+  background-position: center -5rem;
+  background-repeat: no-repeat;
+  padding: 0 1rem;
+  padding-top: 12.5rem;
+  border-radius: 0 5rem 0 5rem;
+}
+.state p {
+  color: var(--text);
+  padding-bottom: 4rem;
+  line-height: 1.5;
+}
+.state h2 {
+  padding: 3rem 0;
+  color: var(--text);
+  font-size: 1.8rem;
+}
+.laptop{
+  padding: 1rem 0;
+}
+.pb{
+  padding-bottom: 5rem;
+}
+/* footer */
+footer{
+  background-color: var(--very-dark-black-blue);
+  display: grid;
+  border-radius: 0 5rem 0 0;
+  text-align: center;
+}
+.logo-footer{
+  width: 5rem;
+  justify-self: center;
+  padding: 2rem 0;
+}
+.footer-menu{
+  color: var(--footer-text);
+  justify-self: center;
+}
+.product ul {
+  list-style: none;
+}
+.product ul li{
+  padding: .2rem 0 
+}
+.product h3{
+  padding: 1rem 0;
 }
