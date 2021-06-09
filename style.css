@@ -30,15 +30,15 @@ button {
   margin: 0 0.3rem;
   font-family: var(--font-ubuntu);
 }
-ul{
+ul {
   list-style: none;
 }
-.drop-down ul li{
+.drop-down ul li {
   display: flex;
 }
-.arrow-light{
-  margin-left: .3rem;
-  width: .6rem;
+.arrow-light {
+  margin-left: 0.3rem;
+  width: 0.6rem;
   height: 1rem;
 }
 /* Navigation */
@@ -56,9 +56,10 @@ nav {
   width: 5rem;
   align-self: center;
 }
-.nav-menu{
+.nav-menu {
   display: none;
 }
+
 /* Intro */
 .intro {
   text-align: center;
@@ -116,12 +117,18 @@ nav {
   color: var(--very-dark-grayish-blue);
   line-height: 1.5;
 }
-.illustration-desktop{
+.illustration-desktop {
+  display: none;
+}
+.design-large {
   display: none;
 }
 /* state */
 .state-section {
   text-align: center;
+}
+.state-section-lg {
+  display: none;
 }
 .phone {
   height: 25rem;
@@ -147,89 +154,231 @@ nav {
   color: var(--text);
   font-size: 1.8rem;
 }
-.laptop{
+.laptop {
   padding: 1rem 0;
 }
-.pb{
+.pb {
   padding-bottom: 5rem;
 }
 /* footer */
-footer{
+footer {
   background-color: var(--very-dark-black-blue);
   display: grid;
   border-radius: 0 5rem 0 0;
   text-align: center;
+  margin-top: 3rem;
 }
-.logo-footer{
+.logo-footer {
   width: 5rem;
   justify-self: center;
   padding: 2rem 0;
 }
-.logo-footer-small{
+.logo-footer-small {
   display: none;
 }
-.footer-menu{
+.footer-menu {
   color: var(--footer-text);
   justify-self: center;
 }
 .product ul {
   list-style: none;
 }
-.product ul li{
-  padding: .2rem 0 
+.product ul li {
+  padding: 0.2rem 0;
 }
-.product h3{
+.product h3 {
   padding: 1rem 0;
 }
-@media screen and (min-width:768px) {
- .hamburger-menu{
-   display: none;
- }
- nav{
-   grid-template-columns: max-content auto;
- }
- .nav-menu{
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   color: var(--text);
-   padding-left: 2rem;
- }
- .drop-down{
-  align-self: center;
+.header-design {
+  display: none;
 }
- .drop-down ul{
-   display: flex;
- }
- .drop-down ul li{
-   padding: 0 1rem;
- }
- .btn-reg{
-   justify-self: end;
- }
- .login{
-   background-color: transparent;
-   color: var(--text);
- }
- .illustration-mobile{
-   display: none;
- }
- footer{
-   padding: 1rem 2rem;
-   text-align: start;
- }
- .logo-footer{
-   display: none;
- }
- .logo-footer-small{
-   display: block;
-  justify-self: start;
-  width: 5rem;
-  margin: 0 3rem;
- }
- .footer-menu{
-  display: flex;
- }
- .product{
-   padding: 0 2rem;
- }
+@media screen and (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+  nav {
+    grid-template-columns: max-content auto;
+  }
+  .nav-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: var(--text);
+    padding-left: 2rem;
+  }
+  .drop-down-title {
+    display: flex;
+    margin-right: 1rem;
+  }
+  .dropdown ul {
+    display: flex;
+    position: relative;
+  }
+  .dropdown ul li {
+    flex-direction: row;
+  }
+
+  .dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content1 a {
+    color: var(--very-dark-grayish-blue);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content1 a:hover {
+    color: black;
+  }
+
+  .dropbtn-1:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content2 a {
+    color: var(--very-dark-grayish-blue);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content2 a:hover {
+    color: black;
+  }
+
+  .dropdown:hover .dropdown-content2 {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    text-decoration: underline;
+  }
+  .btn-reg {
+    justify-self: end;
+  }
+  .login {
+    background-color: transparent;
+    color: var(--text);
+  }
+  .design {
+    display: none;
+  }
+  .design-large {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5rem 0 5rem 5rem;
+  }
+  .header-design {
+    display: block;
+    margin: 0 auto;
+    padding: 3rem;
+    margin-bottom: -10rem;
+    text-align: center;
+  }
+  .design-large h4 {
+    padding-bottom: 2rem;
+    color: var(--very-dark-black-blue);
+  }
+  .design-text {
+    padding-top: 3.5rem;
+  }
+  .design-large p {
+    padding-bottom: 2.5rem;
+    color: var(--very-dark-blue);
+    line-height: 1.5;
+  }
+  .illustration-mobile {
+    display: none;
+  }
+  .illustration-desktop {
+    display: block;
+  }
+  /* .state {
+    padding-top: 0.1rem;
+    background-size: contain;
+    background-position: left -5rem;
+    border: 2px solid rgb(217, 255, 0);
+    margin: 0rem;
+  }
+  .state h2,
+  .state p {
+    border: 2px solid blue;
+    padding-left: 25rem;
+    margin-right: 3rem;
+    text-align: start;
+  }
+  .phone {
+    width: 380px;
+    margin-bottom: -20rem;
+  } */
+  .state-section {
+    display: none;
+  }
+  .state-section-lg {
+    display: block;
+    background-color: var(--very-dark-blue);
+    background-image: url(./images/bg-pattern-circles.svg);
+    background-size: contain;
+    background-position: left -9rem;
+    background-repeat: no-repeat;
+    padding: 0 1rem;
+    padding-top: 2rem;
+    border-radius: 0 5rem 0 5rem;
+  }
+  .state-text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 3rem;
+  }
+  .state-lg {
+    margin: 2rem;
+    color: var(--text);
+    line-height: 1.5;
+  }
+  .state-lg p{
+    padding-top: 1.8rem;
+  }
+  .phone-lg img {
+    /* border: 2px solid gold; */
+    margin-top: -10rem;
+    height: 30rem;
+    width: 30rem;
+  }
+  .free {
+    display: grid;
+  }
+  footer {
+    padding: 1rem 2rem;
+    text-align: start;
+  }
+  .logo-footer {
+    display: none;
+  }
+  .logo-footer-small {
+    display: block;
+    justify-self: start;
+    width: 5rem;
+    margin: 0 3rem;
+  }
+  .footer-menu {
+    display: flex;
+  }
+  .product {
+    padding: 0 2rem;
+  }
 }
