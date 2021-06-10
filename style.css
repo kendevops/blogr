@@ -41,9 +41,16 @@ ul {
   width: 0.6rem;
   height: 1rem;
 }
+.bg-img {
+  background-image: url(./images/bg-pattern-intro.svg),
+    linear-gradient(to top left, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0 0 0 5rem;
+}
 /* Navigation */
 nav {
-  background-color: var(--light-red);
+  /* background-color: var(--light-red); */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 2rem 1rem;
@@ -66,9 +73,8 @@ nav {
   padding: 5rem 1rem;
   padding-bottom: 8rem;
   font-family: var(--font-overpass);
-  background-color: var(--light-red);
+  /* background-color: var(--light-red); */
   color: var(--text);
-  border-radius: 0 0 0 5rem;
 }
 .intro h1 {
   font-size: 2.2rem;
@@ -116,6 +122,7 @@ nav {
 .design p {
   color: var(--very-dark-grayish-blue);
   line-height: 1.5;
+  padding-bottom: 1rem;
 }
 .illustration-desktop {
   display: none;
@@ -289,17 +296,20 @@ footer {
     padding: 3rem;
     margin-bottom: -10rem;
     text-align: center;
+    color: var(--very-dark-grayish-blue);
+    font-size: 1.8rem;
   }
   .design-large h4 {
     padding-bottom: 2rem;
-    color: var(--very-dark-black-blue);
+    color: var(--very-dark-blue);
+    font-size: 1.8rem;
   }
   .design-text {
     padding-top: 3.5rem;
   }
   .design-large p {
     padding-bottom: 2.5rem;
-    color: var(--very-dark-blue);
+    color: var(--very-dark-grayish-blue);
     line-height: 1.5;
   }
   .illustration-mobile {
@@ -308,24 +318,6 @@ footer {
   .illustration-desktop {
     display: block;
   }
-  /* .state {
-    padding-top: 0.1rem;
-    background-size: contain;
-    background-position: left -5rem;
-    border: 2px solid rgb(217, 255, 0);
-    margin: 0rem;
-  }
-  .state h2,
-  .state p {
-    border: 2px solid blue;
-    padding-left: 25rem;
-    margin-right: 3rem;
-    text-align: start;
-  }
-  .phone {
-    width: 380px;
-    margin-bottom: -20rem;
-  } */
   .state-section {
     display: none;
   }
@@ -333,8 +325,8 @@ footer {
     display: block;
     background-color: var(--very-dark-blue);
     background-image: url(./images/bg-pattern-circles.svg);
-    background-size: contain;
-    background-position: left -9rem;
+    background-size:contain;
+    background-position: left -10rem;
     background-repeat: no-repeat;
     padding: 0 1rem;
     padding-top: 2rem;
@@ -350,7 +342,7 @@ footer {
     color: var(--text);
     line-height: 1.5;
   }
-  .state-lg p{
+  .state-lg p {
     padding-top: 1.8rem;
   }
   .phone-lg img {
