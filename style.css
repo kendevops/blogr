@@ -1,0 +1,675 @@
+*{
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+}
+body{
+  
+   max-width: 100%;
+   cursor: pointer;
+   background-color: hsl(0, 0%, 100%);
+}
+.desktop{
+   padding-left: 10px;
+}
+
+
+.columA{
+   display: flex;
+  
+   flex-direction: column;
+   padding: 10px;
+    line-height: 25px;
+}
+.columA p:hover{
+   text-decoration: underline;
+}
+ .columB {
+    display: flex;
+    
+    flex-direction: column;
+    padding: 10px;
+    line-height: 25px;
+    
+ }
+ .columB p:hover{
+    text-decoration: underline;
+ }
+ .columC{
+    display: flex;
+    
+    flex-direction: column;
+    padding: 10px;
+    line-height: 25px;
+ }
+ .columC p:hover{
+    text-decoration: underline;
+ }
+ .hiddenA p:hover{
+    font-weight: bold;
+ }
+ .hiddenB p:hover{
+   font-weight: bold;
+}
+.hiddenC p:hover{
+   font-weight: bold;
+}
+    
+ 
+ .foot{
+     display: flex;
+     color: hsl(240, 2%, 79%);
+     background-color: hsl(240, 10%, 16%);
+     justify-content: space-around;
+     padding: 50px;
+     padding-right: 150px;
+     padding-left: 100px;
+     border-top-right-radius:100px ;
+ }
+ .design-head{
+    text-align:center;
+    font-size: 40px;
+    margin-left: 200px;
+   color: hsl(208, 49%, 24%);
+    
+}
+ .design{
+     display: flex;
+     
+     padding-left: 80px;
+    color: hsl(208, 49%, 24%);
+     
+     margin: -180px auto;
+ }
+ .design-p{
+    
+    
+    width: 100%;
+   padding-right: 60px;
+    margin-top: 250px;
+  
+ }
+ 
+ .right-foot{
+    
+     width: 80%;
+     display: flex;
+    justify-content: space-between;
+ }
+ .img-div{
+   margin-left:60px ;
+   overflow: hidden;
+  
+    
+    }
+ 
+ .design-p p{
+    align-self: center;
+    margin-left:100px ;
+    font-size: 20px;
+ }
+ #intro{
+   align-self: center;
+   margin-left:100px ;
+ }
+ #robust{
+   align-self: center;
+   margin-left:100px ;
+ }
+ .top{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    color: white;
+    
+    
+  
+    
+ }
+ .top-left{
+    display: flex;
+    font-size: 18px;
+    
+    
+   
+ }
+ .listA{
+    display: flex;
+    flex-direction: column;
+   
+    padding: 20px;
+    padding-top: 15px;
+   
+ }
+ .hiddenA{
+    display: none;
+   background-color: white;
+   border-radius: 5px;
+   padding: 20px;
+   line-height: 30px;
+   width: 180px;
+   color: black;
+}
+.hiddenB{
+   display: none;
+   background-color: white;
+   border-radius: 5px;
+   padding: 20px;
+   line-height: 30px;
+   width: 180px;
+   color: black;
+}
+ .hiddenC{
+    display:  none;
+   background-color: white;
+   border-radius: 5px;
+   padding: 20px;
+   line-height: 30px;
+   width: 180px;
+   color: black;
+ }
+ .listB{
+   display: flex;
+   flex-direction: column;
+  
+   padding: 20px;
+   padding-top: 15px;
+   
+}
+
+.listC{
+   display: flex;
+   flex-direction: column;
+   
+   padding: 20px;
+   padding-top: 15px;
+  
+}
+
+ #top-head{
+  align-self: flex-start;
+  font-size: 40px;
+   font-weight: bold;
+   margin-right:60px ;
+   margin-left: 60px;
+}
+#foot-head{
+   
+   font-size: 40px;
+   font-weight: bold;
+   color: white;
+  
+   
+}
+.top-right{
+  
+   font-size: 18px;
+   
+   display: flex;
+}
+.top-right p{
+   margin-left:30px ;
+}
+.top-right button{
+  
+   margin: 0px;
+   margin-left: 15px;
+   padding:18px 10px;
+   margin-top: -10px;
+   width:120px;
+}
+#arrowA{
+   width: 10px;
+}
+#arrowB{
+   width: 10px;
+}
+#arrowC{
+   width: 10px;
+}
+button{
+   border-radius: 34px;
+   height: 45px;
+   font-size: 18px;
+   padding:18px 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 10px;
+   
+   
+   
+}
+#butnA:hover{
+   background-color:  hsl(355, 100%, 74%);
+   color: white;
+}
+#butnC:hover{
+   background-color:  hsl(355, 100%, 74%);
+   color: white;
+}
+#butnC{
+   background-color: white;
+   color:  hsl(356, 100%, 66%);
+   border: none;
+   
+}
+#butnA{
+   width: 135px;
+   background-color: white;
+   color:  hsl(356, 100%, 66%);
+   border: none;
+}
+#butnB:hover{
+   background-color: white;
+   color:  hsl(356, 100%, 66%);
+}
+#butnB{
+   background-color: hsl(353, 100%, 62%);
+   color: white;
+   width: 135px;
+   border:1px solid white;
+}
+.upper{
+   background-color: hsl(13, 100%, 72%);
+   margin-bottom: 135px;
+   border-bottom-left-radius: 100px;
+   padding-bottom:160px ;
+   background-image: url(images/bg-pattern-intro.svg);
+   background-repeat: no-repeat;
+   background-position-y: center;
+   background-position-x: center;
+}
+.text{
+  
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size:22px;
+   color: white;
+   
+}
+h1{
+   font-size: 50px;
+}
+ .butn{
+    margin-top: 10px;
+    display: flex;
+  margin:  10px;
+ }
+ .phones{
+    display: flex;
+    margin-top: 220px;
+    background-color:  hsl(237, 17%, 21%);
+    border-top-right-radius:100px ;
+    height: 400px;
+   margin-bottom: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: auto;
+    background-image: url(images/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+   background-position-y: -500px;
+   background-position-x:-215px;
+   color: white;
+ }
+ #phone-img{
+    
+    margin-top: -60px;
+ 
+    
+ }
+ #phone-image{
+    margin-left: 100px;
+    
+ }
+ #phone-text{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-left: 60px;
+    margin-right: 100px;
+    
+ }
+ #phone-text h2{
+    font-size: 40px;
+   
+ }
+ .free{
+    display: flex;
+    margin-top: 100px;
+    font-size: 20px;
+    margin-left: 10px;
+    overflow: hidden;
+    
+ }
+ .free-text{
+    align-self: center;
+    width: 100%;
+    padding-right: 60px;
+    font-size: 18px;
+    line-height: 35px;
+    color: hsl(208, 49%, 24%);
+   
+ }
+ .free-text h2{
+    color: hsl(208, 49%, 24%);
+ }
+ .free-text p{
+    line-height: 30px;
+    
+ }
+ .free-img{
+    
+   
+   margin: 0 0  0 -280px ;
+    }
+    #blogr-foot{
+       display: flex;
+    }
+    
+
+
+    @media only screen and (min-width:376px){
+       .desktop{
+         display:inline-block;
+       }
+       .mobile{
+          display: none;
+       }
+    }
+    @media only screen and (max-width:375px){
+      .desktop{
+        display:none;
+      }
+      .mobile{
+         display: inline-block;
+      }
+   }
+    
+    .mobile{
+       max-width: 100%;
+       min-width: 100%;
+       overflow: hidden;
+    }
+    .mobile-butn{
+       display: flex;
+       justify-content: center;
+       margin-bottom: 30px;
+    }
+    .mobile butn button{
+      
+      border-radius: 34px;
+      height: 45px;
+      font-size: 18px;
+      padding:18px 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+      width: 135px;
+      
+      
+    }
+    .mobile-top button{
+      
+      width: 135px;
+    }
+    .mobile-drop{
+       font-size: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      width: 300px;
+      margin: 10px auto;
+     padding: 15px 0px;
+     line-height: 50px;
+    display: none;
+     position: absolute;
+     align-self: center;
+     justify-content: center;
+     left: 0;
+     right: 0;
+     margin-left: auto;
+     margin-right: auto;
+     border-radius: 5px;
+     
+    }
+    #mobile-listB{
+       width: 10px;
+       margin-left: 10px;
+    }
+    #mobile-listA{
+      width: 10px;
+      margin-left: 10px;
+   }
+   #mobile-listC{
+      width: 10px;
+      margin-left: 10px;
+   }
+    .mobile-toptext{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size:20px;
+      color:black;
+      text-align: center;
+      margin-bottom: 40px;
+      margin-top: 80px;
+    }
+    .mobile-design p{ 
+      text-align: center;
+      font-size: 22px;
+     
+     
+    }
+    .mobile-topmost{
+       display: flex;
+       justify-content: space-between;
+       padding: 10px 40px;
+      
+    
+      padding-top: 60px;
+    }
+
+    .mobile-toptext h1{
+       margin-bottom: 15px;
+    }
+   .mobile-toptext p{
+      font-size: 25px;
+      padding: 10px;
+   }
+    .mobile-top{
+      margin: 0px auto;
+      background-color: hsl(13, 100%, 72%);
+      border-bottom-left-radius: 100px;
+      padding-bottom: 40px;
+      background-image: url(images/bg-pattern-intro.svg);
+      background-size: 600px 500px;
+      background-position-x: center;
+      background-position-y:center;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+    .mobile-hiddenA{
+      display: none;
+      padding: 0 35px;
+      background-color: hsl(240, 2%, 79%);
+      
+      margin: 0 auto;
+      
+    }
+    .mobile-hiddenB{
+      display: none;
+      padding: 0 35px;
+      background-color: hsl(240, 2%, 79%);
+
+   }
+   .mobile-hiddenC{
+      display: none;
+      padding: 0 35px;
+      background-color: hsl(240, 2%, 79%);
+   }
+    .mobile-designhead{
+       text-align: center;
+       font-size: 30px;
+       margin-top: 40px;
+       color: hsl(208, 49%, 24%);
+    }
+    .mobile-imgdiv{
+      margin: 30px auto;
+     
+     
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+    .mobile-design{
+      padding: 40px;
+      margin-bottom: 180px;
+      color: hsl(208, 49%, 24%);
+      
+    }
+    .mobile-phoneimg{
+       margin: 0px auto;
+      display: flex;
+      justify-content: center;
+      margin-top: -200px;
+      
+      
+    }
+    #mobile-pimg{
+       width: 100%;
+    }
+    .mobile-laptop{
+      margin: 0px auto;
+      display: flex;
+      justify-content: center;
+    }
+    .mobile-foot{
+       border-top-right-radius: 100px;
+       display: flex;
+       flex-direction: column;
+       margin-top: 15px;
+       font-size: 22px;
+       background-color: hsl(240, 10%, 16%);
+       color: hsl(240, 2%, 79%);
+       padding: 50px;
+     padding-right: 150px;
+     padding-left: 100px;
+     font-size: 25px;
+    }
+    .mobile-foot p{
+       font-size: 25px;
+       line-height:42px;
+    }
+    .foot-headA{
+       display: flex;
+       flex-direction: column;
+       font-weight: bold;
+       margin-top: 40px;
+       color: white;
+    }
+    .foot-headB{
+      display: flex;
+      flex-direction: column;
+      font-weight: bold;
+      color: white;
+   }
+   .foot-headC{
+      display: flex;
+      flex-direction: column;
+      font-weight: bold;
+      color: white;
+   }
+   h2{
+      text-align: center;
+      margin-top: 35px;
+      font-size: 30px;
+   }
+   .mobile-state p{
+      text-align: center;
+      font-size: 22px;
+     
+   }
+   .mobile-state{
+      padding: 40px;
+      background-image: url(images/bg-pattern-circles.svg);
+      background-position-x:center;
+      background-position-y: center;
+     background-repeat: no-repeat;
+    background-size: 600px 500px;
+     border-top-right-radius:100px ;
+    border-bottom-left-radius: 100px;
+      background-position-y:-180px;
+      background-color:  hsl(237, 17%, 21%);
+      color: white;
+   }
+   .mobile-free{
+      text-align: center;
+      
+   }
+   .mobile-free{
+      padding:20px 40px;
+      margin-bottom: 50px;
+   }
+   .mobile-free p{
+     font-size: 22px;
+     
+      
+   }
+   #mobile.logo{
+      padding-bottom: 20px;
+   }
+   
+   #mobile-butnB{
+      background-color: hsl(353, 100%, 62%);
+      color: white;
+      width: 135px;
+      border:1px solid white;
+      font-size: 22px;
+      font-weight: bold;
+   }
+   #mobile-butnA{
+      font-size: 22px;
+      border-radius: 0px;
+      border: none;
+      background-color: white;font-weight: bold;
+
+     
+   }
+   #mobile-botnA{
+      border: none;
+      font-size: 18px;
+      width: 135px;
+   }
+   #mobile-botnB{
+      background-color: hsl(353, 100%, 62%);
+      color: white;
+      width: 135px;
+      border:1px solid white;
+      font-size: 18px;
+   }
+   .m-product{
+      font-weight: bold;
+   }
+   .m-company{
+      font-weight: bold;
+     
+      
+   }
+
+   .m-connect{
+      font-weight: bold;
+   }
+   .products{
+      border-bottom: 1px solid black;
+      
+     text-align: center;
+     width: 100%;
+      
+   }
